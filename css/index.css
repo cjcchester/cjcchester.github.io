@@ -3392,7 +3392,7 @@ h1.page-title + .tag-cloud-list {
 }
 #footer-wrap {
   position: relative;
-  padding: 40px 20px;
+  padding: 20px 20px;
   color: var(--light-grey);
   text-align: center;
 }
@@ -3406,10 +3406,11 @@ h1.page-title + .tag-cloud-list {
   margin: 0 4px;
 }
 #footer-wrap .icp-icon {
-  padding: 0 4px;
-  max-height: 1.4em;
+  padding: 0 4px 0 0;
+  max-height: 1em;
   width: auto;
   vertical-align: text-bottom;
+  border-radius: 50%;
 }
 #page-header {
   position: relative;
