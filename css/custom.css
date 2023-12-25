@@ -1,5 +1,5 @@
 /* 
-如下配置均来自
+如下配置部分参考了
 https: //blog.imzjw.cn/posts/b74f504f
 感谢！
 */
@@ -9,15 +9,15 @@ https: //blog.imzjw.cn/posts/b74f504f
 .layout_post>#page,
 .layout_post>#post,
 .read-mode .layout_post>#post {
-  background: var(--light_bg_color)
+  background: var(--web_bg)
 }
 
 #aside-content .card-widget {
-  background: var(--light_bg_color)
+  background: var(--web_bg)
 }
 
 #web_bg {
-  background: linear-gradient(90deg, rgba(247, 149, 51, .1), rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1))
+  background: linear-gradient(90deg, rgba(247, 149, 51, .1), rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1)) !important;
 }
 
 #footer {
@@ -29,7 +29,7 @@ https: //blog.imzjw.cn/posts/b74f504f
 }
 
 #footer::before {
-  background: rgba(255, 255, 255, .15)
+  background: rgba(255, 255, 255, .15) !important;
 }
 
 #footer #footer-wrap {
@@ -38,4 +38,33 @@ https: //blog.imzjw.cn/posts/b74f504f
 
 #footer #footer-wrap a {
   color: var(--font-color)
+}
+
+/* 
+.site-icon {
+  border-radius: 50%;
+} */
+
+/* 底部的排布，各花入各眼，我不要太高 */
+.footer_custom_text>div>p {
+  line-height: 1.5;
+}
+
+.footer_custom_text>div>p>a {
+  margin: 0 5px 0 5px;
+}
+
+/* 文章里的上一篇/下一篇/相关推荐的图片 */
+#pagination.pagination-post {
+  border: dashed;
+  border-width: 2px 4px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, rgba(247, 149, 51, .25), rgba(243, 112, 85, .25) 15%, rgba(239, 78, 123, .25) 30%, rgba(161, 102, 171, .25) 44%, rgba(80, 115, 184, .25) 58%, rgba(16, 152, 173, .25) 72%, rgba(7, 179, 155, .25) 86%, rgba(109, 186, 130, .25))
+}
+
+.relatedPosts>.relatedPosts-list>div {
+  border-radius: 5%;
+  background: linear-gradient(90deg, rgba(247, 149, 51, .25), rgba(243, 112, 85, .25) 15%, rgba(239, 78, 123, .25) 30%, rgba(161, 102, 171, .25) 44%, rgba(80, 115, 184, .25) 58%, rgba(16, 152, 173, .25) 72%, rgba(7, 179, 155, .25) 86%, rgba(109, 186, 130, .25));
+  margin: 6px 8px;
+  width: calc(33.333% - 16px);
 }
