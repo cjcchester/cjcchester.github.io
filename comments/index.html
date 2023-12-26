@@ -54,7 +54,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-12-26 07:50:39'
+  postUpdate: '2023-12-26 08:04:57'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -277,8 +277,8 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
       pageview: false,
       dark: 'html[data-theme="dark"]',
       path: window.location.pathname,
-      comment: false,
-    }, {"pageSize":10,"requiredMeta":["nick","mail"],"locale":{"placeholder":"昵称和邮箱为必填项，为了您能及时收到相关回复的邮件通知，请确保邮箱的正确性！"},"langMode":null,"admin":"cjcchester"}))
+      comment: true,
+    }, {"pageSize":10,"requiredMeta":["nick","mail"],"locale":{"placeholder":"昵称和邮箱为必填项，为了您能及时收到相关回复的邮件通知，请确保邮箱的正确性！"},"langMode":{"admin":"cjcchester"}}))
   }
 
   const loadWaline = async () => {
@@ -290,8 +290,8 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-
     }
   }
 
-  if ('Waline' === 'Waline' || !true) {
-    if (true) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
     else setTimeout(loadWaline, 0)
   } else {
     window.loadOtherComment = loadWaline
